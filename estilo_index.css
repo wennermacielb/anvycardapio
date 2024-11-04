@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    & ::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+}
+.cabecalho{
+    width: 100%;
+    height: 80px;
+    background-color: #fff;
+    color: #333;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    border-bottom: 1px solid #ccc;
+}
+.img-perfil{
+    width: 18%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    padding-block: 5px;
+    float:left;
+}
+
+.img-perfil img{
+    height: 100%;
+    border-radius: 10%;
+}
+.usuario-logado{
+    width: 64%;
+    height: 100%;
+    float: left;
+    display: flex;
+    flex-direction: column;
+}
+.usuario-logado h1{
+    display: flex;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top:20px;
+    justify-content: center;
+}
+
+.usuario-logado h3{
+    display: flex;
+    font-size: 16px;
+    font-weight: 200;
+    justify-content: center;
+}
+.sair{
+    display: flex;
+    justify-content: center;
+}
+.sair img{
+    display: flex;
+    height: 30px;
+    margin-block: 25px ;
+}
+.sair img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+
+.menu{
+    padding-block: 10px;
+    width: 60px;
+    display: flex;
+    height: calc(100vh - 80px);
+    background-color: #fff;
+    padding-inline:10px;
+    flex-direction: column;
+    border-right: 1px solid #ccc;
+}
+.menu img{
+    width: 40px;
+    height: 40px;
+    border-radius: 10%; 
+    padding: 5px;
+    margin-block:2.5px
+}
+.menu img:hover{
+    cursor: pointer;
+    transform: scale(1.3);
+}
+iframe{
+    position: absolute;
+    width: calc(100vw - 60px);
+    left:60px;
+    border:none;
+    height: calc(100vh - 80px);
+    top:80px;
+    background: #f4f4f4;
+    
+}
+.menu a{
+    color: #333;
+}
+.menu a span{
+    display: none;
+}
+
+.menu a:hover > span{
+    position: absolute;
+    left:59px;
+    margin-top: -45px;
+    display: block;
+    z-index: 999;
+    background-color: #fff;
+    padding: 9px;
+    border-radius: 0 5px 5px 0;
+    border: 1px solid #ccc;
+    border-left: 1px solid #fff;
+}
